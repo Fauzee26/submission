@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/item_background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_poster"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="3dp" />
+
+    <TextView
+        android:id="@+id/txtJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toRightOf="@id/img_poster"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="Spiderman: Far From Home" />
+
+    <TextView
+        android:id="@+id/txtGenre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtJudul"
+        android:layout_marginStart="5dp"
+        android:layout_toRightOf="@id/img_poster"
+        android:fontFamily="@font/montserrat"
+        android:paddingBottom="5dp"
+        tools:text="Action, Adventure, Sci-fi" />
+
+    <TextView
+        android:id="@+id/txt_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_bg"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="8.5" />
+</RelativeLayout>
